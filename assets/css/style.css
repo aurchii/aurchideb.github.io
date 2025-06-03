@@ -372,21 +372,24 @@ body.nav-active { overflow: hidden; }
 }
 
 .hero-banner {
-  position: relative;
-  max-width: max-content;
-  margin-inline: auto;
-}
+      flex: 0 0 auto;
+      max-width: 500px;
+    }
 
-.hero-banner .w-100 {
-  mask-image: url("../images/Blob.svg");
-  -webkit-mask-image: url("../images/Blog.svg");
-  mask-repeat: no-repeat;
-  -webkit-mask-repeat: no-repeat;
-  mask-position: center;
-  -webkit-mask-position: center;
-  mask-size: auto;
-  -webkit-mask-size: auto;
-}
+    .hero-banner img {
+      border-radius: 10px;
+      object-fit: cover;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+      /* Override the mask styling */
+      mask-image: none !important;
+      -webkit-mask-image: none !important;
+      mask-repeat: unset !important;
+      -webkit-mask-repeat: unset !important;
+      mask-position: unset !important;
+      -webkit-mask-position: unset !important;
+      mask-size: unset !important;
+      -webkit-mask-size: unset !important;
+    }
 
 .hero .shape {
   position: absolute;
