@@ -1,568 +1,407 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- 
-    - primary meta tags
-  -->
-  <title>Aurchi Deb - Management Information Systems & Digital Marketing Professional</title>
-  <meta name="title" content="Aurchi Deb - Management Information Systems & Digital Marketing Professional">
-  <meta name="description" content="Results-driven BBA student specializing in Management Information Systems with proven experience in social media marketing, content strategy, and SEO.">
-
-  <!-- 
-    - favicon
-  -->
-  
-  <link rel="shortcut icon" href="./icon-2.svg" type="image/svg+xml">
-
-
-  <!-- 
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
-
-  <!-- 
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!-- 
-    - preload images
-  -->
-  <link rel="preload" as="image" href="./assets/images/hero-banner.jpg">
-  <link rel="preload" as="image" href="./assets/images/Blog.svg">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetGuardian App User Manual</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .subtitle {
+            margin: 0.5rem 0 0 0;
+            opacity: 0.9;
+        }
+        .content {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #667eea;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 0.5rem;
+            margin-top: 2rem;
+        }
+        h3 {
+            color: #764ba2;
+            margin-top: 1.5rem;
+        }
+        .feature-box {
+            background: #f8f9ff;
+            border-left: 4px solid #667eea;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 0 5px 5px 0;
+        }
+        .warning-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 0 5px 5px 0;
+        }
+        .steps {
+            background: #e8f5e8;
+            border-left: 4px solid #28a745;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 0 5px 5px 0;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Monaco', 'Menlo', monospace;
+        }
+        .button-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        .button-card {
+            background: white;
+            border: 2px solid #667eea;
+            border-radius: 8px;
+            padding: 1rem;
+            text-align: center;
+        }
+        .button-icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        ul {
+            padding-left: 1.5rem;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        .toc {
+            background: #f8f9ff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+        .toc ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .toc li {
+            margin-bottom: 0.3rem;
+        }
+        .toc a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        .toc a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
-
 <body>
+    <div class="header">
+        <h1>PetGuardian App</h1>
+        <p class="subtitle">Complete User Manual</p>
+    </div>
 
-  <!-- 
-    - #HEADER
-  -->
-
-  <header class="header" data-header>
-    <div class="container">
-      
-      <a href="#" class="logo" style="font-size: 1.8rem; font-weight: 700; color: var(--rich-black-fogra-29, #1a1a1a); text-decoration: none;">
-        Aurchi Deb
-      </a>
-
-      <nav class="navbar" data-navbar>
-
-        <div class="navbar-top">
-          <a href="#" class="logo" style="font-size: 1.8rem; font-weight: 700; color: var(--rich-black-fogra-29, #1a1a1a); text-decoration: none;">
-        Aurchi Deb
-           </a>
-
-          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
-            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
-          </button>
+    <div class="content">
+        <div class="toc">
+            <h3>Table of Contents</h3>
+            <ul>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#interface">Main Interface Features</a></li>
+                <li><a href="#actions">Main Action Buttons</a></li>
+                <li><a href="#safezones">Setting Up Safe Zones</a></li>
+                <li><a href="#setup">Collar Setup and Maintenance</a></li>
+                <li><a href="#troubleshooting">Troubleshooting</a></li>
+                <li><a href="#safety">Safety Guidelines</a></li>
+                <li><a href="#support">Support & Best Practices</a></li>
+            </ul>
         </div>
 
-        <ul class="navbar-list">
+        <h2 id="overview">Overview</h2>
+        <p>PetGuardian is a comprehensive pet monitoring and tracking application that combines GPS location tracking, real-time monitoring, and interactive communication features to keep your pet safe and connected.</p>
 
-          <li>
-            <a href="#" class="navbar-link">Home</a>
-          </li>
+        <h2 id="interface">Main Interface Features</h2>
 
-          <li>
-            <a href="#about" class="navbar-link">About</a>
-          </li>
+        <h3>1. Real-time Location</h3>
+        <div class="feature-box">
+            <ul>
+                <li><strong>Interactive Map</strong>: Displays your pet's current location on a live map</li>
+                <li><strong>GPS Tracking</strong>: Provides accurate location updates when your pet is outdoors</li>
+                <li><strong>Indoor Positioning</strong>: Uses Wi-Fi and other signals for indoor location tracking</li>
+                <li><strong>Location History</strong>: View where your pet has been throughout the day</li>
+            </ul>
+        </div>
 
-          <li>
-            <a href="#achievements" class="navbar-link">Achievements</a>
-          </li>
+        <div class="steps">
+            <strong>How to Use:</strong>
+            <ul>
+                <li>The map updates automatically when the app is open</li>
+                <li>Tap and zoom on the map to get a closer view of your pet's location</li>
+                <li>Pull down to refresh for the latest location update</li>
+            </ul>
+        </div>
 
-          <li>
-            <a href="#contact" class="navbar-link">Contact</a>
-          </li>
+        <h3>2. Collar Status</h3>
+        <div class="feature-box">
+            <ul>
+                <li><strong>Battery Level</strong>: Shows current battery percentage</li>
+                <li><strong>Battery Indicator</strong>: Green indicates good battery level</li>
+                <li><strong>Connection Status</strong>: Displays if the collar is connected to the network</li>
+                <li><strong>Signal Strength</strong>: Shows GPS and cellular signal quality</li>
+            </ul>
+        </div>
 
+        <div class="steps">
+            <strong>Battery Management:</strong>
+            <ul>
+                <li>Charge the collar when battery drops below 20%</li>
+                <li>Battery typically lasts 5-7 days depending on usage</li>
+                <li>Enable power-saving mode to extend battery life up to 30 days</li>
+            </ul>
+        </div>
+
+        <h3>3. Lost Mode</h3>
+        <div class="warning-box">
+            <strong>Emergency Tracking Mode</strong>
+            <ul>
+                <li>Activates enhanced tracking when your pet goes missing</li>
+                <li>Provides more frequent location updates during emergency</li>
+                <li>Uses all available networks for maximum tracking coverage</li>
+                <li>Sends immediate alerts when pet leaves safe zones</li>
+            </ul>
+        </div>
+
+        <div class="steps">
+            <strong>How to Activate:</strong>
+            <ol>
+                <li>Tap the Lost Mode toggle switch</li>
+                <li>Confirm activation in the popup dialog</li>
+                <li>The collar will enter emergency tracking mode</li>
+                <li>Deactivate when your pet is found safe</li>
+            </ol>
+        </div>
+
+        <h2 id="actions">Main Action Buttons</h2>
+
+        <div class="button-grid">
+            <div class="button-card">
+                <div class="button-icon">🎤</div>
+                <h4>Listen</h4>
+                <p>Real-time Audio Monitoring</p>
+            </div>
+            <div class="button-card">
+                <div class="button-icon">💬</div>
+                <h4>Talk</h4>
+                <p>Two-way Communication</p>
+            </div>
+            <div class="button-card">
+                <div class="button-icon">📹</div>
+                <h4>View Camera</h4>
+                <p>Live Video Streaming</p>
+            </div>
+            <div class="button-card">
+                <div class="button-icon">📊</div>
+                <h4>Activity</h4>
+                <p>Health & Activity Monitoring</p>
+            </div>
+        </div>
+
+        <h3>Listen 🎤 - Real-time Audio Monitoring</h3>
+        <div class="feature-box">
+            <ul>
+                <li><strong>Live Audio</strong>: Hear what's happening around your pet in real-time</li>
+                <li><strong>Environmental Sounds</strong>: Monitor for distress, barking, or unusual activity</li>
+                <li><strong>Background Listening</strong>: Receive audio alerts when specific sounds are detected</li>
+            </ul>
+        </div>
+
+        <div class="steps">
+            <strong>How to Use:</strong>
+            <ol>
+                <li>Tap the "Listen" button</li>
+                <li>Allow microphone permissions if prompted</li>
+                <li>Audio stream will begin immediately</li>
+                <li>Tap again to stop listening</li>
+            </ol>
+        </div>
+
+        <h3>Talk 💬 - Two-way Communication</h3>
+        <div class="feature-box">
+            <ul>
+                <li><strong>Voice Messages</strong>: Send voice commands to your pet</li>
+                <li><strong>Real-time Talk</strong>: Communicate with your pet instantly</li>
+                <li><strong>Pre-recorded Commands</strong>: Use saved voice commands for training</li>
+                <li><strong>Comfort Feature</strong>: Calm anxious pets with your voice</li>
+            </ul>
+        </div>
+
+        <div class="steps">
+            <strong>How to Use:</strong>
+            <ol>
+                <li>Tap the "Talk" button</li>
+                <li>Hold down to record a message or speak live</li>
+                <li>Your voice will play through the collar's speaker</li>
+                <li>Release to end the message</li>
+            </ol>
+        </div>
+
+        <h3>View Camera 📹 - Live Video Streaming</h3>
+        <div class="feature-box">
+            <ul>
+                <li><strong>HD Video</strong>: Watch your pet through the collar's camera</li>
+                <li><strong>Real-time Feed</strong>: See what your pet sees in their environment</li>
+                <li><strong>Photo Capture</strong>: Take photos during live viewing</li>
+                <li><strong>Video Recording</strong>: Record clips of your pet's activities</li>
+            </ul>
+        </div>
+
+        <div class="steps">
+            <strong>Camera Controls:</strong>
+            <ul>
+                <li>Tap to start live video stream</li>
+                <li>Use pinch gestures to zoom in/out</li>
+                <li>Tap camera icon to capture photos</li>
+                <li>Tap record icon to save video clips</li>
+            </ul>
+        </div>
+
+        <h3>Activity 📊 - Activity and Health Monitoring</h3>
+        <div class="feature-box">
+            <ul>
+                <li><strong>Step Counter</strong>: Track daily walking and running</li>
+                <li><strong>Activity Levels</strong>: Monitor active vs. rest periods</li>
+                <li><strong>Health Insights</strong>: Analyze activity patterns for health indicators</li>
+                <li><strong>Daily/Weekly Reports</strong>: View activity summaries and trends</li>
+            </ul>
+        </div>
+
+        <h2 id="safezones">Setting Up Safe Zones</h2>
+
+        <h3>Geo-fencing</h3>
+        <div class="steps">
+            <ol>
+                <li><strong>Tap the map area</strong> to access location settings</li>
+                <li><strong>Create Safe Zones</strong>: Draw boundaries around safe areas (home, yard, dog park)</li>
+                <li><strong>Set Zone Names</strong>: Label each safe zone for easy identification</li>
+                <li><strong>Configure Alerts</strong>: Choose notification types for zone entries/exits</li>
+                <li><strong>Save Settings</strong>: Confirm and save your geo-fence settings</li>
+            </ol>
+        </div>
+
+        <h3>Zone Types:</h3>
+        <ul>
+            <li><strong>Home Zone</strong>: Primary safe area around your residence</li>
+            <li><strong>Play Areas</strong>: Dog parks, beaches, or recreational areas</li>
+            <li><strong>Restricted Zones</strong>: Areas where your pet should not go</li>
         </ul>
 
-        <div class="wrapper">
-          <a href="mailto:aurchiidebb@gmail.com" class="contact-link">aurchiidebb@gmail.com</a>
+        <h2 id="setup">Collar Setup and Maintenance</h2>
 
-          <a href="https://www.linkedin.com/in/aurchi-deb-02355b276/" class="contact-link">LinkedIn Profile</a>
+        <h3>Initial Setup</h3>
+        <div class="steps">
+            <ol>
+                <li><strong>Charge the Collar</strong>: Fully charge before first use</li>
+                <li><strong>Download App</strong>: Install PetGuardian app on your smartphone</li>
+                <li><strong>Create Account</strong>: Register with email and password</li>
+                <li><strong>Pair Device</strong>: Follow in-app instructions to connect collar</li>
+                <li><strong>Fit Collar</strong>: Adjust for comfortable, secure fit on your pet</li>
+            </ol>
         </div>
 
-        <ul class="social-list">
+        <h3>Proper Collar Fitting</h3>
+        <div class="warning-box">
+            <ul>
+                <li><strong>Snug but Comfortable</strong>: Should fit snugly without being too tight</li>
+                <li><strong>Two-Finger Rule</strong>: You should be able to fit two fingers between collar and neck</li>
+                <li><strong>Contact Points</strong>: Ensure GPS and communication components touch your pet's neck</li>
+                <li><strong>Regular Checks</strong>: Check fit regularly, especially for growing pets</li>
+            </ul>
+        </div>
 
-          <li>
-            <a href="https://www.linkedin.com/in/aurchi-deb-02355b276/" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
+        <h2 id="troubleshooting">Troubleshooting</h2>
 
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-
+        <h3>Connection Issues</h3>
+        <ul>
+            <li><strong>Poor GPS Signal</strong>: Move to open area, away from buildings</li>
+            <li><strong>App Not Connecting</strong>: Check Wi-Fi/cellular connection, restart app</li>
+            <li><strong>Collar Offline</strong>: Ensure collar is charged and in coverage area</li>
+            <li><strong>Delayed Updates</strong>: Location updates may be delayed in poor signal areas</li>
         </ul>
 
-      </nav>
+        <h3>Audio/Video Issues</h3>
+        <ul>
+            <li><strong>No Audio</strong>: Check microphone permissions and volume settings</li>
+            <li><strong>Poor Video Quality</strong>: Ensure good cellular/Wi-Fi signal strength</li>
+            <li><strong>Delayed Feed</strong>: Video may have slight delay due to transmission</li>
+        </ul>
 
-      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
-        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
-      </button>
+        <h2 id="safety">Safety Guidelines</h2>
 
-      <div class="overlay" data-nav-toggler data-overlay></div>
-
-    </div>
-  </header>
-
-  <main>
-    <article>
-
-      <!-- 
-        - #HERO
-      -->
-
-      <section class="section hero" aria-label="home">
-        <div class="container">
-
-           <figure class="hero-banner">
-            <img src="./assets/images/AB2404A6-A7F1-4223-8BEA-40A5E5E4DC60.JPG" width="660" height="640" alt="Aurchi Deb" class="w-100"
-              data-reveal="top">
-          </figure>
-
-          <div class="hero-content">
-
-            <h1 class="h1 hero-title" data-reveal="top" data-reveal-delay="0.5s">
-              Management Information Systems & Digital Marketing Professional
-            </h1>
-
-            <p class="section-text" data-reveal="top" data-reveal-delay="0.75s">
-              Hello! I'm Aurchi Deb, a results-driven BBA student specializing in Management Information Systems with proven experience in social media marketing, content strategy, and SEO. I'm passionate about combining analytical thinking with creative insight to drive impactful business and technology projects.
-            </p>
-
-            <div class="btn-wrapper" data-reveal="top" data-reveal-delay="1s">
-              <a href="#contact" class="btn btn-secondary">Contact Me</a>
-            </div>
-
-          </div>
-
-        </div>
-      </section>
-
-         <!-- 
-        - #ABOUT
-      -->
-
-      <section class="section about" aria-label="about" id="about">
-        <div class="container">
-
-          <div class="wrapper">
-
-            <div data-reveal="left">
-              <h2 class="h2 section-title">What I Do?</h2>
-
-              <p class="section-text">
-                I specialize in Management Information Systems with a strong focus on digital marketing, social media strategy, and SEO optimization. My experience spans across content creation, market analysis, and leadership roles in academic and professional settings. I bring together technical skills with creative problem-solving to deliver comprehensive business solutions.
-              </p>
-            </div>
-
-            <ul class="progress-list" data-reveal="right">
-
-              <li class="progress-item">
-
-                <div class="label-wrapper">
-                  <p>Social Media Marketing</p>
-
-                  <span class="span">95%</span>
-                </div>
-
-                <div class="progress">
-                  <div class="progress-fill" style="width: 95%; background-color: #c7b1dd"></div>
-                </div>
-
-              </li>
-
-              <li class="progress-item">
-
-                <div class="label-wrapper">
-                  <p>SEO & Content Strategy</p>
-
-                  <span class="span">90%</span>
-                </div>
-
-                <div class="progress">
-                  <div class="progress-fill" style="width: 90%; background-color: #8caeec"></div>
-                </div>
-
-              </li>
-
-              <li class="progress-item">
-
-                <div class="label-wrapper">
-                  <p>Leadership & Management</p>
-
-                  <span class="span">88%</span>
-                </div>
-
-                <div class="progress">
-                  <div class="progress-fill" style="width: 88%; background-color: #b0d4c1"></div>
-                </div>
-
-              </li>
-
-              <li class="progress-item">
-
-                <div class="label-wrapper">
-                  <p>Database Management (MySQL)</p>
-
-                  <span class="span">85%</span>
-                </div>
-
-                <div class="progress">
-                  <div class="progress-fill" style="width: 85%; background-color: #e3a6b6"></div>
-                </div>
-
-              </li>
-
+        <div class="warning-box">
+            <h3>Important Safety Information</h3>
+            <ul>
+                <li><strong>Remove for Rest</strong>: Don't leave collar on for more than 12 hours daily</li>
+                <li><strong>Regular Breaks</strong>: Give your pet collar-free time indoors</li>
+                <li><strong>Skin Irritation</strong>: Check regularly for any signs of irritation</li>
+                <li><strong>Age Requirements</strong>: Not recommended for pets under 6 months old</li>
+                <li><strong>Weight Requirements</strong>: Ensure collar is appropriate for your pet's size</li>
             </ul>
-
-          </div>
-
-          <ul class="grid-list">
-
-            <li data-reveal="bottom">
-              <div class="about-card">
-
-                <div class="card-icon">
-                  <img src="./assets/images/icon-1.svg" width="52" height="52" loading="lazy" alt="social media marketing icon">
-                </div>
-
-                <h3 class="h4 card-title">Social Media Marketing</h3>
-
-                <p class="card-text">
-                  Experienced in creating and managing social media campaigns, content strategy, and digital marketing initiatives. Proven track record in promoting products and services through strategic LinkedIn content and targeted marketing approaches.
-                </p>
-
-              </div>
-            </li>
-
-            <li data-reveal="bottom" data-reveal-delay="0.25s">
-              <div class="about-card">
-
-                <div class="card-icon">
-                  <img src="./assets/images/icon-2.svg" width="52" height="52" loading="lazy" alt="SEO icon">
-                </div>
-
-                <h3 class="h4 card-title">SEO & Analytics</h3>
-
-                <p class="card-text">
-                  Skilled in SEO keyword research, country-specific targeting, and digital content optimization. Experienced in using analytics tools to improve online visibility and engagement rates for business growth.
-                </p>
-
-              </div>
-            </li>
-
-            <li data-reveal="bottom" data-reveal-delay="0.5s">
-              <div class="about-card">
-
-                <div class="card-icon">
-                  <img src="./assets/images/icon-3.svg" width="52" height="52" loading="lazy"
-                    alt="leadership icon">
-                </div>
-
-                <h3 class="h4 card-title">Leadership & Diplomacy</h3>
-
-                <p class="card-text">
-                  Strong leadership experience through Model UN activities, team coordination, and delegate relations. Skilled in diplomacy, research, negotiations, and training others in professional communication and conflict resolution.
-                </p>
-
-              </div>
-            </li>
-
-            <li data-reveal="bottom" data-reveal-delay="0.75s">
-              <div class="about-card">
-
-                <div class="card-icon">
-                  <img src="./assets/images/icon-4.svg" width="52" height="52" loading="lazy" alt="database icon">
-                </div>
-
-                <h3 class="h4 card-title">Information Systems</h3>
-
-                <p class="card-text">
-                  Proficient in MySQL database management, MS Project, and MS Visio. Strong analytical skills in Management Information Systems with the ability to design and implement technical solutions for business processes.
-                </p>
-
-              </div>
-            </li>
-
-          </ul>
-
         </div>
-      </section>
 
-      <section class="section about" aria-label="achievements" id="achievements">
-        <div class="container">
-
-          <div class="wrapper">
-
-            <div data-reveal="left">
-              <h2 class="h2 section-title">Key Achievements & Skills</h2>
-
-              <p class="section-text">
-                Recognized for outstanding performance in leadership, public speaking, and professional development. Multilingual professional with expertise in English, Bangla, and Chinese languages.
-              </p>
-            </div>
-
-            <ul class="progress-list" data-reveal="right">
-
-              <li class="progress-item">
-
-                <div class="label-wrapper">
-                  <p>MySQL Database Management</p>
-
-                  <span class="span">85%</span>
-                </div>
-
-                <div class="progress">
-                  <div class="progress-fill" style="width: 85%; background-color: #c7b1dd"></div>
-                </div>
-
-              </li>
-
-              <li class="progress-item">
-
-                <div class="label-wrapper">
-                  <p>MS Project & MS Visio</p>
-
-                  <span class="span">80%</span>
-                </div>
-
-                <div class="progress">
-                  <div class="progress-fill" style="width: 80%; background-color: #8caeec"></div>
-                </div>
-
-              </li>
-
-              <li class="progress-item">
-
-                <div class="label-wrapper">
-                  <p>Canva Design</p>
-
-                  <span class="span">90%</span>
-                </div>
-
-                <div class="progress">
-                  <div class="progress-fill" style="width: 90%; background-color: #b0d4c1"></div>
-                </div>
-
-              </li>
-
-              <li class="progress-item">
-
-                <div class="label-wrapper">
-                  <p>SEO & Digital Marketing</p>
-
-                  <span class="span">95%</span>
-                </div>
-
-                <div class="progress">
-                  <div class="progress-fill" style="width: 95%; background-color: #e3a6b6"></div>
-                </div>
-
-              </li>
-
-            </ul>
-
-          </div>
-
-          <ul class="grid-list">
-
-            <li data-reveal="bottom">
-              <div class="about-card">
-
-                <div class="card-icon">
-                  <img src="./assets/images/icon-1.svg" width="52" height="52" loading="lazy" alt="achievement icon">
-                </div>
-
-                <h3 class="h4 card-title">Public Speaking Excellence</h3>
-
-                <p class="card-text">
-                  Achieved 3rd position in intra-competition performance in Public Speaking, demonstrating strong communication skills and confidence in presenting ideas to diverse audiences.
-                </p>
-
-              </div>
-            </li>
-
-            <li data-reveal="bottom" data-reveal-delay="0.25s">
-              <div class="about-card">
-
-                <div class="card-icon">
-                  <img src="./assets/images/icon-2.svg" width="52" height="52" loading="lazy" alt="leadership icon">
-                </div>
-
-                <h3 class="h4 card-title">Management Leadership</h3>
-
-                <p class="card-text">
-                  Recognized as Best Performer in Corporate Management Team, showcasing exceptional leadership abilities, team coordination, and strategic thinking in professional environments.
-                </p>
-
-              </div>
-            </li>
-
-            <li data-reveal="bottom" data-reveal-delay="0.5s">
-              <div class="about-card">
-
-                <div class="card-icon">
-                  <img src="./assets/images/icon-3.svg" width="52" height="52" loading="lazy" alt="model un icon">
-                </div>
-
-                <h3 class="h4 card-title">Model UN Excellence</h3>
-
-                <p class="card-text">
-                  Outstanding Star Performer of REC12 in NSUMUNC, demonstrating exceptional diplomatic skills, research capabilities, and negotiation expertise in international relations simulations.
-                </p>
-
-              </div>
-            </li>
-
-            <li data-reveal="bottom" data-reveal-delay="0.75s">
-              <div class="about-card">
-
-                <div class="card-icon">
-                  <img src="./assets/images/icon-4.svg" width="52" height="52" loading="lazy" alt="technical skills icon">
-                </div>
-
-                <h3 class="h4 card-title">Technical Expertise</h3>
-
-                <p class="card-text">
-                  Proficient in MySQL Database Management, MS Project & MS Visio, Canva Design, and SEO & Digital Marketing. Strong technical foundation for comprehensive business solutions.
-                </p>
-
-              </div>
-            </li>
-
-          </ul>
-
+        <h3>Emergency Procedures</h3>
+        <div class="steps">
+            <ol>
+                <li><strong>Pet Goes Missing</strong>: Immediately activate Lost Mode</li>
+                <li><strong>Contact Authorities</strong>: Notify local animal control and shelters</li>
+                <li><strong>Use All Features</strong>: Utilize Listen, Talk, and Camera functions to locate pet</li>
+                <li><strong>Check Activity Log</strong>: Review recent activity for clues about disappearance</li>
+                <li><strong>Share Information</strong>: Use location data to coordinate search efforts</li>
+            </ol>
         </div>
-      </section>
 
- 
+        <h2 id="support">Support & Best Practices</h2>
 
-      <section class="section contact" aria-label="contact" id="contact">
-        <div class="container">
+        <h3>Daily Use Best Practices</h3>
+        <ul>
+            <li><strong>Morning Check</strong>: Verify collar is charged and connected</li>
+            <li><strong>Set Activity Goals</strong>: Encourage healthy exercise levels</li>
+            <li><strong>Monitor Regularly</strong>: Check location and status throughout day</li>
+            <li><strong>Evening Review</strong>: Review daily activity and any alerts</li>
+        </ul>
 
-          <div class="contact-card">
+        <h3>Customer Support</h3>
+        <ul>
+            <li><strong>In-App Help</strong>: Tap help icon for tutorials and FAQs</li>
+            <li><strong>Online Support</strong>: Visit manufacturer's website for updates</li>
+            <li><strong>Contact Support</strong>: Use in-app contact form for technical issues</li>
+            <li><strong>User Community</strong>: Join online forums for tips and advice</li>
+        </ul>
 
-            <div class="contact-content" data-reveal="left">
-
-              <div class="card-icon">
-                <img src="./assets/images/icon-5.svg" width="44" height="44" loading="lazy" alt="envelop icon">
-              </div>
-
-              <h2 class="h2 section-title">Let's collaborate on your next project.</h2>
-
-              <p class="section-text">
-                I bring analytical thinking, creative insight, and proven experience in digital marketing and leadership to help drive your business forward. Have any questions or project ideas? Reach out to me and let's discuss how we can work together.
-              </p>
-
-              <div style="margin-top: 2rem;">
-                <p><strong>Location:</strong> Bashundhara R/A Block-I, Dhaka</p>
-                <p><strong>Email:</strong> aurchiidebb@gmail.com</p>
-                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/aurchi-deb-02355b276/" target="_blank">linkedin.com/in/aurchi-deb-02355b276/</a></p>
-              </div>
-
-            </div>
-
-            <form action="" class="contact-form" data-reveal="right">
-
-              <div class="input-wrapper">
-                <input type="text" name="name" placeholder="Name *" required class="input-field">
-
-                <input type="email" name="email_address" placeholder="Email *" required class="input-field">
-              </div>
-
-              <textarea name="message" placeholder="Message *" required class="input-field"></textarea>
-
-              <button type="submit" class="btn btn-secondary">Send message</button>
-
-            </form>
-
-          </div>
-
+        <div style="margin-top: 3rem; padding: 1.5rem; background: #f8f9ff; border-radius: 8px; text-align: center;">
+            <p><em>This manual covers the main features visible in the PetGuardian app interface. For device-specific instructions or the latest features, consult the official documentation provided by your device manufacturer or contact their customer support.</em></p>
         </div>
-      </section>
-
-    </article>
-  </main>
-
-  <!-- 
-    - #FOOTER
-  -->
-
-  <footer class="footer">
-    <div class="container">
-
-      <p class="copyright">
-        © 2024 Aurchi Deb. All rights reserved.
-      </p>
-
-      <ul class="social-list">
-
-        <li>
-          <a href="https://www.linkedin.com/in/aurchi-deb-02355b276/" class="social-link">
-            <ion-icon name="logo-linkedin"></ion-icon>
-          </a>
-        </li>
-
-        <li>
-          <a href="#" class="social-link">
-            <ion-icon name="logo-twitter"></ion-icon>
-          </a>
-        </li>
-
-        <li>
-          <a href="#" class="social-link">
-            <ion-icon name="logo-facebook"></ion-icon>
-          </a>
-        </li>
-
-        <li>
-          <a href="#" class="social-link">
-            <ion-icon name="logo-instagram"></ion-icon>
-          </a>
-        </li>
-
-      </ul>
-
     </div>
-  </footer>
-
-  <!-- 
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!-- 
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
 </body>
-
 </html>
